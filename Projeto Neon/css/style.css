@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 124.6rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 112%;
+}
+
+h1,
+h2 {
+  line-height: 112%;
+  letter-spacing: -1px;
+}
+
+h3,
+h4 {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+h1,
+h2,
+h3 h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #4e4b59;
+}
+
+.card-depoimento {
+  width: 100%;
+  max-width: 38.4rem;
+  height: 20.9rem;
+  background-color: rgba(241, 240, 245, 0.554);
+  border-radius: 0.8rem;
+  padding: 3.7rem 3.2rem 2.3rem 3.2rem;
+}
+
+.card-depoimento .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.1rem;
+}
+
+.card-depoimento .user strong {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 112%;
+  letter-spacing: -1px;
+  color: #4e4b59;
+}
+
+.card-depoimento p {
+  font-weight: 500;
+  font-family: 'Inter';
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #5f5c6b;
+}
+
+.btn-primary {
+  background-color: #ffc800;
+  color: #855b35;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffdc5c;
+}
+
+.btn-primary,
+.btn-secondary {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  padding: 0 2.6rem;
+  border-radius: 122px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 4.8rem;
+}
+
+.btn-secondary {
+  border: 1px solid #00a5f0;
+  background-color: transparent;
+  color: #00a5f0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #00a5f0;
+  color: #ffffff;
+}
+
+.btn-secondary.white {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-secondary.white:hover {
+  background-color: white;
+  color: #00d7d7;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5.9rem;
+}
+
+header nav ul li:not(:first-child) {
+  margin-left: 4.8rem;
+}
+
+header nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 125%;
+  color: #ffffff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffc800;
+}
+
+.s-hero {
+  width: 100%;
+  height: 78.6rem;
+  background: url("../img/bg-hero.svg") no-repeat center center;
+  padding-top: 17.5rem;
+}
+
+.s-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.s-hero .text {
+  width: 100%;
+  max-width: 68.4rem;
+}
+
+.s-hero .text h3 {
+  opacity: 0.8;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 3.2rem;
+}
+
+.s-hero .text h1 {
+  color: #fff;
+  margin-bottom: 3.9rem;
+}
+
+.s-hero .text ul {
+  width: 100%;
+  max-width: 62.1rem;
+  margin-top: 6.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.s-hero .text ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.s-hero .text ul li .icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 203, 226, 0.4)), to(rgba(53, 202, 226, 0)));
+  background: linear-gradient(180deg, rgba(53, 203, 226, 0.4) 0%, rgba(53, 202, 226, 0) 100%);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1.2rem;
+}
+
+.s-hero .text ul li span {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+}
+
+.s-hero .area-image {
+  width: 100%;
+  max-width: 70.6rem;
+  margin-right: -17.4rem;
+}
+
+.s-hero .area-image h2 {
+  margin-bottom: 6.7rem;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  opacity: 0.4;
+}
+
+.s-hero .area-image .image {
+  position: relative;
+  width: 100%;
+  height: 54.1rem;
+  top: 4.3rem;
+}
+
+.s-hero .area-image .image img {
+  position: absolute;
+}
+
+.s-hero .area-image .image .card-front {
+  top: 4.1rem;
+  left: 0;
+  z-index: 2;
+}
+
+.s-hero .area-image .image .card-back {
+  bottom: 4.6rem;
+  right: 8.6rem;
+  z-index: 1;
+}
+
+.s-hero .area-image .image .circle {
+  top: 2.8rem;
+  left: 10.3rem;
+}
+
+.secondary-hero {
+  padding-top: 12.9rem;
+}
+
+.secondary-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.secondary-hero .area-left {
+  width: 100%;
+  max-width: 27rem;
+}
+
+.secondary-hero .area-left .mockup {
+  width: 100%;
+  max-width: 27rem;
+  position: relative;
+  margin-bottom: 5.9rem;
+}
+
+.secondary-hero .area-left .mockup .circle {
+  position: absolute;
+  z-index: -1;
+  top: 8rem;
+  max-width: 37rem;
+  left: -21.5rem;
+}
+
+.secondary-hero .area-left .mockup .cell {
+  z-index: 1;
+}
+
+.secondary-hero .area-left .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.secondary-hero .area-left .text .points {
+  margin-bottom: 2rem;
+}
+
+.secondary-hero .area-left .text .icon-quadrado {
+  margin-bottom: 3.6rem;
+}
+
+.secondary-hero .area-left .text .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondary-hero .area-left .text .info h3 {
+  text-align: center;
+}
+
+.secondary-hero .area-left .text .info p {
+  text-align: center;
+  font-size: 1.6rem;
+  opacity: 0.7;
+  margin-bottom: 2.6rem;
+}
+
+.secondary-hero .area-left .text .info .apple-store {
+  margin-bottom: 1.3rem;
+}
+
+.secondary-hero .area-right {
+  width: 100%;
+  max-width: 80rem;
+}
+
+.secondary-hero .area-right .main-text {
+  margin-top: 7rem;
+}
+
+.secondary-hero .area-right .main-text .btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: -0.5px;
+  color: #0073ce;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  position: relative;
+}
+
+.secondary-hero .area-right .main-text .btn:hover {
+  color: #00d7d7;
+}
+
+.secondary-hero .area-right .main-text .btn .border {
+  width: 1.2rem;
+  height: 0.3rem;
+  background: #ffc800;
+  position: absolute;
+  left: 20rem;
+}
+
+.secondary-hero .area-right h2 {
+  max-width: 48.8rem;
+  color: #33303e;
+  margin-bottom: 4.9rem;
+}
+
+.secondary-hero .area-right ul {
+  margin-bottom: 3rem;
+}
+
+.secondary-hero .area-right ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(225, 224, 231, 0.5);
+  padding: 3rem;
+}
+
+.secondary-hero .area-right ul li:first-child {
+  padding-top: 0;
+}
+
+.secondary-hero .area-right ul li .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secondary-hero .area-right ul li .info .text {
+  margin-left: 4.3rem;
+}
+
+.secondary-hero .area-right ul li .info .text h3 {
+  padding-bottom: 0.3rem;
+}
+
+.secondary-hero .area-right ul li .info .text p {
+  font-size: 1.8rem;
+  opacity: 0.5rem;
+  color: #5f5c6b;
+}
+
+.secondary-hero .area-right .card-neon {
+  height: 410px;
+  background: url(../img/bg-box-card-neon.svg);
+  margin-top: 11rem;
+  position: relative;
+}
+
+.secondary-hero .area-right .card-neon .cartao {
+  width: 100%;
+  max-width: 42rem;
+  position: absolute;
+  top: 10rem;
+  right: -12rem;
+}
+
+.secondary-hero .area-right .card-neon .text {
+  max-width: 49rem;
+  padding-left: 7.2rem;
+  padding-block: 6.7rem;
+}
+
+.secondary-hero .area-right .card-neon .text h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.secondary-hero .area-right .card-neon .text h3 {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+
+.secondary-hero .area-right .card-neon .text p {
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 1rem;
+}
+
+.secondary-hero .area-right .card-neon .text .btn-primary {
+  margin-right: 1.6rem;
+}
+
+.third-hero {
+  width: 100%;
+  height: 48.7rem;
+}
+
+.third-hero .cards-depoimentos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.third-hero .text h2:first-child {
+  color: #c6c5ce;
+  padding-top: 13.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.third-hero .card-depoimento {
+  margin-top: 4rem;
+}
+
+.four-hero {
+  width: 100%;
+  height: 192rem;
+}
+/*# sourceMappingURL=style.css.map */
