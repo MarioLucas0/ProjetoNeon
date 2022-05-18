@@ -228,6 +228,119 @@ header nav ul li a:hover {
   color: #ffc800;
 }
 
+footer {
+  background: #0073CE;
+  width: 100%;
+  height: 61.5rem;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .footer-final {
+  opacity: .8;
+  font-family: 'Inter';
+  width: 100%;
+  padding-top: 1.2rem;
+}
+
+footer .container .top {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 12.7rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 3px solid rgba(73, 196, 253, 0.205);
+}
+
+footer .container .top .icons-top {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 1.7rem;
+}
+
+footer .container .top .icons-top img {
+  width: 1.9rem;
+  height: 1.6rem;
+}
+
+footer .container p {
+  color: white;
+  font-size: 1rem;
+}
+
+footer .container .produtos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 24.3rem;
+  width: 100%;
+  margin-top: 5.7rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 36.5rem;
+  border-bottom: 3px solid rgba(73, 196, 253, 0.205);
+}
+
+footer .container .produtos .principal {
+  font-size: 1.4rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+footer .container .produtos li {
+  font-family: 'Inter';
+  color: #FFFFFF;
+  opacity: 0.67;
+  padding: 1.5rem;
+}
+
+footer .container .produtos .atendimentos {
+  font-family: 'Inter';
+  color: #FFFFFF;
+  width: 280px;
+  height: 78px;
+}
+
+footer .container .produtos .atendimentos .atendimento-conteudo {
+  height: 7.8rem;
+  background: rgba(0, 164, 240, 0.233);
+  border-radius: 6px;
+  padding: 1.5rem 0 0 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+footer .container .produtos .atendimentos .atendimento-conteudo p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+}
+
 .s-hero {
   width: 100%;
   height: 78.6rem;
@@ -623,6 +736,7 @@ header nav ul li a:hover {
 .four-hero {
   width: 100%;
   height: 19rem;
+=======
 }
 
 .four-hero .container {

@@ -1,1 +1,96 @@
+footer{
+    background: #0073CE;
+    width: 100%;
+    height: 61.5rem;    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer-final{            
+            opacity: .8;
+            font-family: 'Inter';
+            width: 100%;
+            padding-top: 1.2rem;
+        }
+            .top{
+                margin: 0;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                height: 12.7rem;
+                align-items: center;
+                border-bottom: 3px solid rgba(73, 196, 253, 0.205);
+                
+                .logo{
+
+                }
+                .icons-top{
+                    width: 50%;
+                    display: flex;
+                    justify-content: end;
+                    gap: 1.7rem;
+                    img{
+                        width: 1.9rem;
+                        height: 1.6rem;
+                    }
+                }
+            }
+        p{
+            color:rgb(255, 255, 255);
+            font-size: 1rem;        
+            
+        }
+        .produtos{     
+            display: flex;
+            height: 24.3rem;
+            width: 100%;
+            margin-top: 5.7rem;
+            justify-content: space-between;
+            height: 36.5rem;
+            border-bottom: 3px solid rgba(73, 196, 253, 0.205);
+            ;
+            
+            .principal {
+                    font-size: 1.4rem;
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    color: #FFFFFF;
+                    opacity:1;
+                                     
+            }
+            li {
+                font-family: 'Inter';
+                color:#FFFFFF;
+                opacity: 0.67;
+                padding: 1.5rem;
+            }
+            .atendimentos{
+                font-family: 'Inter';
+                color:#FFFFFF;
+                width: 280px;
+                height: 78px;
+                
+                    
+                
+                .atendimento-conteudo{
+                    height: 7.8rem;
+                    background: rgba(0, 164, 240, 0.233);
+                    border-radius: 6px;
+                    padding: 1.5rem 0 0 1.5rem;      
+                    margin-bottom: 1.2rem;  
+                                                
+                    p {
+                        font-size: 1.4rem;  
+                        font-weight: 600;
+                        color: rgba(255, 255, 255, 1); 
+                                              
+                    }
+                } 
+            }
+        }
+    }
+    
+    
+}
+    
 
