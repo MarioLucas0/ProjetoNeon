@@ -736,5 +736,97 @@ footer .container .produtos .atendimentos .atendimento-conteudo p {
 .four-hero {
   width: 100%;
   height: 19rem;
+=======
+}
+
+.four-hero .container {
+  position: relative;
+}
+
+.four-hero .main-text {
+  margin-top: 13.8rem;
+  max-width: 54rem;
+  height: 52.1rem;
+}
+
+.four-hero .main-text h2:first-child {
+  color: #c6c5ce;
+  padding-bottom: 0.7rem;
+  width: 54rem;
+}
+
+.four-hero .main-text h2 {
+  padding-bottom: 4.5rem;
+}
+
+.four-hero .main-text ul {
+  max-width: 50.4rem;
+  height: 5.3rem;
+}
+
+.four-hero .main-text ul li .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.7rem;
+}
+
+.four-hero .main-text ul li .info .icon {
+  background: #00d7d7;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.four-hero .main-text ul li .info .text {
+  margin-left: 2.5rem;
+}
+
+.four-hero .area-image {
+  width: 71.9rem;
+  height: 59rem;
+  position: absolute;
+  right: -19.6rem;
+  top: -3rem;
+}
+
+.four-hero .area-image .image {
+  position: relative;
+}
+
+.four-hero .area-image .image img {
+  position: absolute;
+}
+
+.four-hero .area-image .image .cell-1 {
+  right: 55rem;
+  top: 8.6rem;
+  width: 22rem;
+  height: 47.1rem;
+}
+
+.four-hero .area-image .image .cell-2 {
+  right: 30.6rem;
+  width: 22rem;
+  height: 47.1rem;
+}
+
+.four-hero .area-image .image .circle {
+  right: 4rem;
+  top: 9rem;
+  height: 50.8rem;
+  width: 51rem;
 }
 /*# sourceMappingURL=style.css.map */
