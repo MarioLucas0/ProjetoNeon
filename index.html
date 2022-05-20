@@ -9,8 +9,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="/Projeto Neon/css/style.css">
-  <title>Neon</title>
+  <link rel="icon" type="image/jpg" href="/Projeto Neon/img/card-front-pj.svg" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title class="title">Neon</title>
 </head>
 
 <body>
@@ -28,14 +31,17 @@
           <li><a href="">Ajuda</a></li>
         </ul>
         <button class=" btn-secondary white">Abra sua conta digital</button>
+        <button class="btn-mobile">
+          <img src="/Projeto Neon/img/btn-mobile.svg" alt="">
+        </button>
       </nav>
     </div>
   </header>
 
   <section class="s-hero">
     <div class="container">
-      <div class="text">
-        <h3>Abra sua conta,ésó baixaroapp!</h3>
+      <div class="text" data-aos="fade-right">
+        <h3>Abra sua conta,é só baixar o app!</h3>
         <h1>A conta digital certa pra cuidar bem do seu dinheiro</h1>
         <button class="btn-primary">Abra sua conta digital</button>
         <ul>
@@ -43,25 +49,25 @@
             <div class="icon">
               <img src="/Projeto Neon/img/icon-anuidade.svg" alt="Icone de cartao sem anuidade">
             </div>
-            <span>Cartão sem<br /> anuidade</span>
+            <span>Cartão sem anuidade</span>
           <li>
           <li>
             <div class="icon">
               <img src="/Projeto Neon/img/icon-conta-digital.svg" alt="Icone de conta digital">
             </div>
-            <span>Conta digital<br /> 100% grátis</span>
+            <span>Conta digital 100% grátis</span>
           </li>
           <li>
             <div class="icon">
               |<img src="/Projeto Neon/img/icon-dinheiro.svg">
             </div>
-            <span>Seu dinheiro<br />rendendo mais</span>
+            <span>Seu dinheiro rendendo mais</span>
           </li>
         </ul>
       </div>
       <div class="area-image">
-        <h2>Banco 100% digital</h2>
-        <div class="image">
+        <h2 data-aos="fade-left">Banco 100% digital</h2>
+        <div class="image" data-aos="zoom-in">
           <img src="Projeto Neon/img/card-neon-frnt.png" class="card-front" alt="">
           <img src="Projeto Neon/img/card-neon-back.png" class="card-back" alt="">
           <img src="Projeto Neon/img/circle-cards-neon.svg" class="circle" alt="">
@@ -74,10 +80,12 @@
     <div class="container">
       <div class="area-left">
         <div class="mockup">
-          <img src="/Projeto Neon/img/circle-mockup.svg" alt="" class="circle">
-          <img src="/Projeto Neon/img/mockup.svg" alt="" class="cell">
+          <img src="/Projeto Neon/img/circle-mockup.svg" alt="" data-aos="fade-left" class="circle">
+          <img src="/Projeto Neon/img/mockup.svg" alt="" data-aos="flip-right" class="cell">
+          <div class="fundo-mockup"></div>
+
         </div>
-        <div class="text">
+        <div class="text" data-aos="fade-up">
           <div class="points">
             <img src="/Projeto Neon/img/points.svg" alt="">
           </div>
@@ -95,54 +103,68 @@
         </div>
       </div>
       <div class="area-right">
-        <div class="main-text">
+        <div class="main-text" data-aos="fade-left">
           <h2>Resolva sua vida direto pelo app Neon!</h2>
-          <ul>
-            <li>
-              <div class="info">
-                <img src="/Projeto Neon/img/icon-cartao-credito.svg" alt="">
-                <div class="text">
-                  <h3>Cartão de crédito sem anuidade</h3>
-                  <p>Conta digital com cartão de crédito sem anuidade e sem complicação</p>
-                </div>
-              </div>
-              <img src="/Projeto Neon/img/arrow-right.svg" alt="">
-            </li>
-            <li>
-              <div class="info">
-                <img src="/Projeto Neon/img/icon-taxas.svg" alt="">
-                <div class="text">
-                  <h3>Sem taxas</h3>
-                  <p>Transferências, boletos de depósito e outros serviços gratuitos</p>
-                </div>
-              </div>
-              <img src="/Projeto Neon/img/arrow-right.svg" alt="">
-            </li>
-            <li>
-              <div class="info">
-                <img src="/Projeto Neon/img/icon-investimentos.svg" alt="">
-                <div class="text">
-                  <h3>Mais investimentos</h3>
-                  <p>Rendem mais que a poupança e você resgata quando quiser</p>
-                </div>
-              </div>
-              <img src="/Projeto Neon/img/arrow-right.svg" alt="">
-            </li>
-          </ul>
+          <div class="listas">
+            <div class="lista">
+              <ul>
+                <li>
+                  <div class="info">
+                    <img src="/Projeto Neon/img/icon-cartao-credito.svg" alt="">
+                    <div class="text">
+                      <h3>Cartão de crédito sem anuidade</h3>
+                      <p>Conta digital com cartão de crédito sem anuidade e sem complicação</p>
+                    </div>
+                  </div>
+                  <img src="/Projeto Neon/img/arrow-right.svg" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="lista">
+              <ul>
+                <li>
+                  <div class="info">
+                    <img src="/Projeto Neon/img/icon-taxas.svg" alt="">
+                    <div class="text">
+                      <h3>Sem taxas</h3>
+                      <p>Transferências, boletos de depósito e outros serviços gratuitos</p>
+                    </div>
+                  </div>
+                  <img src="/Projeto Neon/img/arrow-right.svg" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="lista">
+              <ul>
+                <li>
+                  <div class="info">
+                    <img src="/Projeto Neon/img/icon-investimentos.svg" alt="">
+                    <div class="text">
+                      <h3>Mais investimentos</h3>
+                      <p>Rendem mais que a poupança e você resgata quando quiser</p>
+                    </div>
+                  </div>
+                  <img src="/Projeto Neon/img/arrow-right.svg" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
           <a href="" class="btn">Conheça outros produtos
             <div class="border"></div>
           </a>
         </div>
-        <div class="card-neon">
+        <div class="card-neon" data-aos="fade-left">
           <div class="text">
             <h2>Neon Pejota</h2>
             <h3>Contas digitais PJ gratuitas para decolar seu negócio!</h3>
             <p>As melhores contas para fazer pagamentos, compras e receber dos seus clientes.</p>
-            <button class="btn-primary">Sou MEI</button>
-            <button class="btn-primary">Sou PJ</button>
+            <div class="btns">
+              <button class="btn-primary">Sou MEI</button>
+              <button class="btn-primary">Sou PJ</button>
+            </div>
           </div>
           <div class="cartao">
-            <img src="/Projeto Neon/img/card-front-pj.svg" alt="">
+            <img src="/Projeto Neon/img/card-front-pj.svg" alt="" class="cartao.">
           </div>
         </div>
       </div>
@@ -152,86 +174,114 @@
 
   <section class="third-hero">
     <div class="container">
-      <div class="text">
-        <h2>Prático, fácil, moderno</h2>
+      <div class="top" data-aos="fade-left">
+        <h3>Prático, fácil,moderno</h3>
         <h2>Você resolve tudo sem estresse 😊 </h2>
+        <div class="pagination"></div>
       </div>
 
-      <div class="cards-depoimentos">
-        <div class="card-depoimento">
-          <div class="user">
-            <strong>@mlucass</strong>
-            <img src="/Projeto Neon/img/icon-twiiter.svg" alt="">
+
+      <div class="cards-depoimentos" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-depoimento">
+              <div class="user">
+                <strong>@m_lucass</strong>
+                <img src="/Projeto Neon/img/icon-twiiter.svg" alt="">
+              </div>
+              <p>Valeu @m_lucass! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+            </div>
           </div>
-          <p>Valeu @mlucass! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
-        </div>
-        <div class="card-depoimento">
-          <div class="user">
-            <strong>@mlucass</strong>
-            <img src="/Projeto Neon/img/icon-twiiter.svg" alt="">
+          <div class="swiper-slide">
+            <div class="card-depoimento">
+              <div class="user">
+                <strong>@m_lucass</strong>
+                <img src="/Projeto Neon/img/icon-twiiter.svg" alt="">
+              </div>
+              <p>Valeu @m_lucass! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+            </div>
           </div>
-          <p>Eu uso o Neon pra render o pouquinho que eu tenho. Como disse minha amiga Bruna, um dia eu abro o app de
-            novo
-            e PA: tô rica.</p>
-        </div>
-        <div class="card-depoimento">
-          <div class="user">
-            <strong>@mlucass</strong>
-            <img src="/Projeto Neon/img/icon-twiiter.svg" alt="">
+
+          <div class="swiper-slide">
+            <div class="card-depoimento">
+              <div class="user">
+                <strong>@m_lucass</strong>
+                <img src="/Projeto Neon/img/icon-twiiter.svg" alt="">
+              </div>
+              <p>Valeu @m_lucass! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+            </div>
           </div>
-          <p>Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro cliente.</p>
+          <div class="swiper-slide">
+            <div class="card-depoimento">
+              <div class="user">
+                <strong>@m_lucass</strong>
+                <img src="/Projeto Neon/img/icon-twiiter.svg" alt="">
+              </div>
+              <p>Valeu @m_lucass! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-depoimento">
+              <div class="user">
+                <strong>@m_lucass</strong>
+                <img src="/Projeto Neon/img/icon-twiiter.svg" alt="">
+              </div>
+              <p>Valeu @m_lucass! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon</p>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
   <section class="four-hero">
     <div class="container">
-      <div class="main-text">
+
+      <div class="main-text" data-aos="fade-right">
         <h2>Aproveite</h2>
         <h2>Domine o seu dinheiro com uma conta 100% digital</h2>
-        <ul>
-          <li>
-            <div class="info">
-              <div class="icon">
-                <img src="/Projeto Neon/img/icon-anuidade.svg" alt="">
-              </div>
-              <div class="text">
-                <h3>Cartão visa internacional</h3>
-                <p>Tenha facilidades e benefícios para o seu dia a dia.</p>
-              </div>
+        <div class="infos">
+
+          <div class="info">
+            <div class="icon">
+              <img src="/Projeto Neon/img/icon-anuidade.svg" alt="">
             </div>
-          </li>
-          <li>
-            <div class="info">
-              <div class="icon">
-                <img src="/Projeto Neon/img/icon-conta-digital.svg" alt="">
-              </div>
-              <div class="text">
-                <h3>Cartão visa internacional</h3>
-                <p>Tenha facilidades e benefícios para o seu dia a dia.</p>
-              </div>
+            <div class="text">
+              <h3>Cartão visa internacional</h3>
+              <p>Tenha facilidades e benefícios para o seu dia a dia.</p>
             </div>
-          </li>
-          <li>
-            <div class="info">
-              <div class="icon">
-                <img src="/Projeto Neon/img/icon-dinheiro.svg" alt="">
-              </div>
-              <div class="text">
-                <h3>Cartão visa internacional</h3>
-                <p>Tenha facilidades e benefícios para o seu dia a dia.</p>
-              </div>
+          </div>
+
+          <div class="info">
+            <div class="icon">
+              <img src="/Projeto Neon/img/icon-conta-digital.svg" alt="">
             </div>
-          </li>
+            <div class="text">
+              <h3>Zero mensalidade e anuidade</h3>
+              <p class="ultimo-p">Tenha facilidades e benefícios para o seu dia a dia.</p>
+            </div>
+          </div>
+
+
+          <div class="info">
+            <div class="icon">
+              <img src="/Projeto Neon/img/icon-dinheiro.svg" alt="">
+            </div>
+            <div class="text">
+              <h3>Investimento que rende mais que a poupança</h3>
+              <p>Tenha facilidades e benefícios para o seu dia a dia.</p>
+            </div>
+          </div>
+
           <button class="btn-primary">Abra sua conta digital</button>
-        </ul>
+        </div>
       </div>
       <div class="area-image">
         <div class="image">
-          <img src="/Projeto Neon/img/mockup-01.svg" alt="" class="cell-1">
-          <img src="/Projeto Neon/img/mockup-02.png" alt="" class="cell-2">
-          <img src="/Projeto Neon/img/circle-conta-digital.svg" alt="" class="circle">
+          <img src="/Projeto Neon/img/mockup-01.svg" alt="" data-aos="fade-up" class="cell-1">
+          <img src="/Projeto Neon/img/mockup-02.png" alt="" data-aos="fade-down" class="cell-2">
+          <img src="/Projeto Neon/img/circle-conta-digital.svg" alt="" data-aos="zoom-in" class="circle">
 
         </div>
       </div>
@@ -314,7 +364,10 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/Projeto Neon/js/swiper.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/Projeto Neon/js/aos.js"></script>
 
 </body>
 

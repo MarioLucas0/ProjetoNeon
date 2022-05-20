@@ -5,6 +5,7 @@ header {
   width: 100%;
   height: 8.8rem;
   display: flex;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.241);
 
   .container {
     @include flex(row, center, space-between);
@@ -32,6 +33,45 @@ header {
             color: $brand-yellow;
           }
         }
+      }
+    }
+  }
+  .btn-mobile {
+    display: none;
+  }
+  @include responsive(1085px) {
+    nav {
+      ul {
+        margin-right: 2.5rem;
+        li {
+          &:not(:first-child) {
+            margin-left: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(991px) {
+    .logo {
+      max-width: 10.8rem;
+    }
+    nav {
+      ul {
+        display: none;
+      }
+      .btn-mobile {
+        display: block;
+        &:not(:first-child) {
+          margin-left: 2.5rem;
+        }
+      }
+    }
+  }
+  @include responsive(530px) {
+    height: 7.3rem;
+    nav {
+      .btn-secondary {
+        display: none;
       }
     }
   }
