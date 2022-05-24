@@ -184,7 +184,7 @@ h3 h4 {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -193,6 +193,36 @@ header {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid rgba(255, 255, 255, 0.241);
+}
+
+header .logo {
+  display: inline-block;
+  width: 132px;
+  height: 30px;
+  background: url("../img/logo.svg") no-repeat center center;
+  background-size: 100%;
+  -webkit-transition: background-image 0.3s;
+  transition: background-image 0.3s;
+}
+
+header.fixed-menu {
+  background: white;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+}
+
+header.fixed-menu .logo {
+  background-image: url(../img/logo-colorida.svg);
+}
+
+header.fixed-menu nav ul li a {
+  color: #33303e;
+}
+
+header.fixed-menu nav .btn-secondary {
+  color: #00a5f0;
+  border: 1px solid #00a5f0;
 }
 
 header .container {
@@ -212,12 +242,74 @@ header .container {
 }
 
 header nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header nav .dropdown {
+  position: absolute;
+  top: 6rem;
+  left: -13rem;
+  width: 100%;
+  max-width: 373px;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 4rem;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+header nav .dropdown:after {
+  content: '';
+  width: 293px;
+  height: 5px;
+  background: #ffc800;
+  border-radius: 12px 12px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+header nav .dropdown.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  pointer-events: all;
+}
+
+header nav .dropdown .item:not(:last-child) {
+  margin-bottom: 2.8rem;
+}
+
+header nav .dropdown .item:hover strong {
+  color: #0073ce;
+}
+
+header nav .dropdown .item strong {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5f5c6b;
+  display: block;
+  margin-bottom: 0.4rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+header nav .dropdown .item p {
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #8c8a97;
 }
 
 header nav ul {
